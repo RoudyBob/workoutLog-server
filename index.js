@@ -19,7 +19,7 @@ app.use(require('./middleware/headers'));
 app.use('/user', user);
 
 // Log endpoint controller
-app.use('log', log);
+app.use('/log', log);
 
 app.listen(3000, function() {
     console.log("App is listening on port 3000");
